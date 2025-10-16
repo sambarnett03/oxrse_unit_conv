@@ -14,6 +14,8 @@ km = kilometer
 
 mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.344)
 
+centimetre = Unit(name='centimetre', abbr='cm', si=meter, to_si_fun=lambda n: n / 10)
+cm = centimetre
 # meter_sq
 
 # meter_cu
@@ -22,6 +24,9 @@ mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.34
 
 pound = Unit(name='pound', abbr='lb', si=kilogram, to_si_fun=lambda n: n * 0.4535924)
 lb = pound
+
+gram = Unit(name='gram', abbr='g', si=kilogram, to_si_function=lambda n: n * 0.001)
+g = gram
 
 # ampere
 
